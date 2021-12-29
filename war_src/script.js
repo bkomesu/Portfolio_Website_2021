@@ -50,10 +50,8 @@ function startGame() {
   deck.shuffle();
 
   const deckMidpoint = Math.ceil(deck.numberOfCards / 2);
-  // playerDeck = new Deck(deck.cards.slice(0, deckMidpoint));
-  // computerDeck = new Deck(deck.cards.slice(deckMidpoint, deck.numberOfCards));
-  playerDeck = new Deck(deck.cards.slice(0, 3));
-  computerDeck = new Deck(deck.cards.slice(4, 7));
+  playerDeck = new Deck(deck.cards.slice(0, deckMidpoint));
+  computerDeck = new Deck(deck.cards.slice(deckMidpoint, deck.numberOfCards));
   inRound = false;
 
   cleanBeforeRound();
