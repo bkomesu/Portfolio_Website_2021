@@ -1,10 +1,27 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body {
+.float-child-Game {
+  width: 30%;
+  float: left;
+  padding: 20px;
+  margin: 0;
+}
+.float-child-Button {
+  width: 20%;
+  float: left;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cgwbody {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 7rem);
@@ -13,6 +30,7 @@ body {
   cursor: pointer;
   justify-content: center;
   padding-top: 1rem;
+  box-sizing: border-box;
 }
 
 .deck {
@@ -41,6 +59,7 @@ body {
   justify-content: center;
   align-items: center;
   user-select: none;
+  border: 2px solid black;
 }
 
 .scoreBoard {
@@ -97,4 +116,10 @@ body {
   bottom: 0.5rem;
   right: 0.5rem;
   transform: rotate(180deg);
+}
+
+.button {
+  user-select: none;
+  width: 100rem;
+  height: 25rem;
 }
