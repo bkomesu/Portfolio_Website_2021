@@ -17,7 +17,7 @@
     <!-- navigation -->
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <a href="#" class="navbar-brand text-dark"
+        <a href="../index.html" class="navbar-brand text-dark"
           ><img
             src="../BK (1).png"
             alt="Brand Image"
@@ -42,9 +42,7 @@
           <ul class="navbar-nav ms-auto text-center">
             <li class="px-3"><a class="nav-link" href="#">Project_1</a></li>
             <li class="px-3">
-              <a class="nav-link" href="./Pages/war_index.html"
-                >Card_Game_War</a
-              >
+              <a class="nav-link" href="war_index.html">Card_Game_War</a>
             </li>
             <li class="px-3"><a class="nav-link" href="#">Tic-Tac-Toe</a></li>
           </ul>
@@ -54,7 +52,25 @@
 
     <!-- Tic-Tac-Toe -->
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="tictactoebody">
+      <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <div class="winning-message" id="winning-message">
+        <div class="winning-message-text" data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+      </div>
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="tic-tac-tow_src/tictactoescript.js"></script>
   </body>
 </html>
