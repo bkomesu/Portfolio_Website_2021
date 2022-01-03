@@ -2,6 +2,31 @@
   font-weight: bolder;
 }
 
+.aboutMe {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 2em;
+}
+
 .paragraph {
   overflow-wrap: break-word;
+}
+
+.firstTwoColunms {
+  display: grid;
+  grid-template-columns: 40vw;
+  float: left;
+}
+
+.img_Profile {
+  height: 50vh;
+  width: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.img {
+  height: 50vh;
+  width: auto;
+  object-fit: cover;
 }
